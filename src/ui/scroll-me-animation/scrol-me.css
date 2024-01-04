@@ -1,0 +1,28 @@
+.my-scrol-element-for-laptop {
+    animation: scrolAnimationLaptop 2000ms normal infinite;
+}
+
+@keyframes scrolAnimationLaptop {
+    0% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateY(-1rem);
+        opacity: 0.8;
+    }
+    80% {
+        transform: translateY(1rem);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(1.5rem);
+        opacity: 0;
+    }
+}
