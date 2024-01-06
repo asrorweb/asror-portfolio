@@ -51,6 +51,14 @@ canvas {
     opacity: 1;
 }
 
+/* for global timeline  */
+.timeline > span {
+    background-color: #9ca3af;
+}
+.dark .timeline > span {
+    background-color: #303b50;
+}
+
 @media screen and (max-width: 640px) {
     .dark .active.settings-navigation-active {
         box-shadow: 20px 20px 60px #1f54c8, -20px -20px 60px #2b72ff;

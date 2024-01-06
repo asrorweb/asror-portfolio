@@ -31,7 +31,6 @@ function IconsMatter() {
                 wireframes: false,
                 background: dark ? "#171836" : "#fff",
                 isStatic: true,
-                // showAngleIndicator: false,
             },
         });
 
@@ -40,8 +39,6 @@ function IconsMatter() {
             isStatic: true,
             render: {
                 fillStyle: dark ? "#171836" : "#fff",
-                // "#060a19",
-                // fillStyle: "#fff",
             },
         });
         // fit the render viewport to the scene
@@ -114,7 +111,7 @@ function IconsMatter() {
 
     return (
         <div
-            className="mx-auto md:mx-0 absolute bottom-20 md:static left-0 right-0"
+            className="mx-auto md:mx-0 absolute bottom-20 md:relative left-0 right-0"
             ref={containerRef}
         />
     );

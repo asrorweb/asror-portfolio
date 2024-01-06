@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 import "./hero-contex.css";
 import pdfCv from "../../assets/asror_turdaliyev_CV.pdf";
 import ScrollReveal from "scrollreveal";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 function HeroContext() {
     const { language } = useSelector((state) => state.language);

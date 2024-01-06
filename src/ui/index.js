@@ -4,3 +4,4 @@ export { default as ThemaChange } from "./thema/thema-change";
 export { default as LangugaeChangeSet } from "./language-change/langugae-change-set";
 export { default as ScrolMeAnimation } from "./scroll-me-animation/scrol-me-animation";
 export { default as ScrollTop } from "./scrol-top/scroll-top";
+export { default as CardTildEff } from "./tild/card-tild-eff";

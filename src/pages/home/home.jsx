@@ -24,7 +24,7 @@ function Home() {
                     ></path>
                 </svg>
             </div>
-            <div className="my-container flex flex-col md:flex-row md:items-center md:justify-between  z-40">
+            <div className="my-container min-h-screen flex flex-col items-center md:flex-row md:items-center md:justify-between  z-40">
                 <HeroContext />
                 <IconsMatter />
             </div>

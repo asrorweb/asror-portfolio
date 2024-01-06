@@ -13,7 +13,7 @@ import { CgDarkMode } from "react-icons/cg";
 import { GoUnmute } from "react-icons/go";
 
 // main pages
-import { About, Home, Settings } from "./pages";
+import { About, Home, Settings, Skills } from "./pages";
 
 // settings pages
 import {
@@ -50,8 +50,7 @@ export const routes = [
         name: "skills",
         path: "/skills",
         color: `#fbf8ec`,
-
-        // element: <Home />,
+        element: <Skills />,
     },
     {
         icon: <HiBriefcase {...icon} />,
