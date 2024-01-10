@@ -13,7 +13,7 @@ import { CgDarkMode } from "react-icons/cg";
 import { GoUnmute } from "react-icons/go";
 
 // main pages
-import { About, Home, Settings, Skills } from "./pages";
+import { About, ContactMe, Home, Settings, Skills } from "./pages";
 
 // settings pages
 import {
@@ -65,8 +65,7 @@ export const routes = [
         name: "contact me",
         path: "/contactme",
         color: `#fbf8ec`,
-
-        // element: <Home />,
+        element: <ContactMe />,
     },
     {
         icon: <HiCog8Tooth {...icon} />,

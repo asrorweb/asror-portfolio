@@ -20,6 +20,18 @@ canvas {
     padding-right: 32px;
 }
 
+.my-box-shadow {
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glasses-effect {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+}
+
 @media screen and (max-width: 768px) {
     .my-container {
         padding-left: 16px;
@@ -72,14 +84,6 @@ canvas {
         rgba(36, 39, 115, 1) 37%,
         rgba(23, 24, 54, 1) 63%
     );
-}
-
-.glasses-effect {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.33);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(11.5px);
-    -webkit-backdrop-filter: blur(11.5px);
 }
 
 /* for scrolling */

@@ -1,10 +1,13 @@
 import { iconsLangData } from "../../data/data-icons";
 import { CardTildEff } from "../../ui";
+import useLampSound from "../../ui/sound-effects/lamp-sound-effects";
 
 import "../../ui/tild/card-tild-eff.css";
 import { v4 as uuidv4 } from "uuid";
 
 function SkillsElements() {
+    const LampSoundEffect = useLampSound();
+
     const handleMouseMove = (e) => {
         for (const card of document.getElementsByClassName("card")) {
             const rect = card.getBoundingClientRect(),
@@ -21,6 +24,7 @@ function SkillsElements() {
             <div
                 id="cards"
                 onMouseMove={handleMouseMove}
+                onMouseEnter={LampSoundEffect}
                 className="grid grid-cols-4 gap-2 "
             >
                 {iconsLangData.map((data) => {

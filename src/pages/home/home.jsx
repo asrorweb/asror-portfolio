@@ -5,7 +5,7 @@ import "./home.css";
 function Home() {
     return (
         <div className="min-h-screen pt-5 sm:pt-0 overflow-hidden">
-            <div className="absolute -z-10 bottom-0 left-0 right-0 hidden md:block">
+            <div className="absolute  bottom-0 left-0 right-0 hidden md:block">
                 <svg
                     width="100%"
                     height="100%"

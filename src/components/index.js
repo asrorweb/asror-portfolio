@@ -5,3 +5,7 @@ export { default as AboutSocial } from "./about-context/about-social";
 export { default as SkillsElements } from "./sklils-context/skills-elements";
 export { default as SkillsTimeline } from "./sklils-context/skills-timeline";
 export { default as SkillsElementMobile } from "./sklils-context/skills-element-mobile";
+export { default as ContactMeContent } from "./contact-me-context/contact-me-content";
+export { default as ContactMeForm } from "./contact-me-context/contact-me-form";
+export { default as SocialMediaContact } from "./contact-me-context/social-media-contact";
+export { default as SocialMediaContactMobile } from "./contact-me-context/social-media-contact-mobile";
