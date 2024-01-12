@@ -19,6 +19,10 @@ import {
     sendEmailStart,
     sendEmailSuccses,
 } from "../../reducer/email-send";
+import {
+    alertMassageError,
+    alertMassageSuccses,
+} from "../../reducer/alert-massage";
 // import {
 //     EMAILJS_USER_ID,
 //     EMAILJS_SERVICE_ID,
@@ -63,9 +67,25 @@ function ContactMeForm() {
                     message: "",
                 });
                 dispatch(sendEmailSuccses());
+                dispatch(
+                    alertMassageSuccses({
+                        title: language
+                            ? "Xabar muvaffaqiyatli yuborildi"
+                            : "Message sent successfully",
+                        color: "green",
+                    })
+                );
             })
             .catch((error) => {
                 dispatch(sendEmailError());
+                dispatch(
+                    alertMassageError({
+                        title: language
+                            ? "Xabar yuborishda xatolik"
+                            : "Error sending message",
+                        color: "red",
+                    })
+                );
             });
     };
 

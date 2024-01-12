@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { iconsLangData } from "../../data/data-icons";
 import { CardTildEff } from "../../ui";
 import useLampSound from "../../ui/sound-effects/lamp-sound-effects";
-
+import ScrollReveal from "scrollreveal";
 import "../../ui/tild/card-tild-eff.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -19,13 +20,24 @@ function SkillsElements() {
         }
     };
 
+    useEffect(() => {
+        ScrollReveal().reveal(`.my-skills-element`, {
+            duration: 1000,
+            delay: 200,
+            distance: "40px",
+            origin: "bottom",
+            easing: "ease-out",
+            reset: true,
+        });
+    }, []);
+
     return (
         <div className="sticky top-1/4 hidden lg:block">
             <div
                 id="cards"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={LampSoundEffect}
-                className="grid grid-cols-4 gap-2 "
+                className="my-skills-element grid grid-cols-4 gap-2 "
             >
                 {iconsLangData.map((data) => {
                     return (

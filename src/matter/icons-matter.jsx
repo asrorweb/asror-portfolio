@@ -50,25 +50,25 @@ function IconsMatter() {
         const boxA = Bodies.rectangle(400, 200, 80, 80, {
             render: { sprite: { texture: `${ReactIcon}` } },
         });
-        const boxB = Bodies.rectangle(290, 250, 80, 80, {
+        const boxB = Bodies.rectangle(330, 250, 80, 80, {
             render: { sprite: { texture: `${JsIcon}` } },
         });
-        const boxC = Bodies.rectangle(210, 10, 80, 80, {
+        const boxC = Bodies.rectangle(350, 10, 80, 80, {
             render: { sprite: { texture: `${HtmlIcon}` } },
         });
-        const boxD = Bodies.rectangle(330, 100, 80, 80, {
+        const boxD = Bodies.rectangle(360, 100, 80, 80, {
             render: { sprite: { texture: `${ReduxIcon}` } },
         });
-        const boxE = Bodies.rectangle(200, 10, 80, 80, {
+        const boxE = Bodies.rectangle(180, 40, 80, 80, {
             render: { sprite: { texture: `${CssIcon}` } },
         });
-        const boxF = Bodies.rectangle(180, 60, 80, 80, {
+        const boxF = Bodies.rectangle(220, 200, 80, 80, {
             render: { sprite: { texture: `${GithubIcon}` } },
         });
         const boxG = Bodies.rectangle(300, 150, 80, 80, {
             render: { sprite: { texture: `${ScssIcon}` } },
         });
-        const boxH = Bodies.rectangle(390, 140, 80, 80, {
+        const boxH = Bodies.rectangle(410, 140, 80, 80, {
             render: { sprite: { texture: `${TailwindIcon}` } },
         });
 

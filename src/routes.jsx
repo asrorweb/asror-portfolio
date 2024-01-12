@@ -13,7 +13,7 @@ import { CgDarkMode } from "react-icons/cg";
 import { GoUnmute } from "react-icons/go";
 
 // main pages
-import { About, ContactMe, Home, Settings, Skills } from "./pages";
+import { About, ContactMe, Home, Settings, Skills, Works } from "./pages";
 
 // settings pages
 import {
@@ -57,8 +57,7 @@ export const routes = [
         name: "works",
         path: "/works",
         color: `#fbf8ec`,
-
-        // element: <Home />,
+        element: <Works />,
     },
     {
         icon: <HiChatBubbleBottomCenterText {...icon} />,
