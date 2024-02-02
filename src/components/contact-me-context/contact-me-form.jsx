@@ -23,11 +23,6 @@ import {
     alertMassageError,
     alertMassageSuccses,
 } from "../../reducer/alert-massage";
-// import {
-//     EMAILJS_USER_ID,
-//     EMAILJS_SERVICE_ID,
-//     EMAILJS_TEMPLATE_ID,
-// } from "../../config/emailjs-config";
 
 function ContactMeForm() {
     const { dark } = useSelector((state) => state.dark);
@@ -91,7 +86,7 @@ function ContactMeForm() {
 
     useEffect(() => {
         ScrollReveal().reveal(`.contact-me-form`, {
-            duration: 2000,
+            duration: 800,
             delay: 200,
             distance: "60px",
             origin: "right",

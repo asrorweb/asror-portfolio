@@ -9,15 +9,15 @@ function ContactMeContent() {
 
     useEffect(() => {
         ScrollReveal().reveal(`.contact-me-title`, {
-            duration: 1000,
+            duration: 500,
             delay: 200,
             distance: "60px",
             origin: "top",
             easing: "ease-out",
         });
         ScrollReveal().reveal(`.contact-me-phone`, {
-            duration: 1000,
-            delay: 1000,
+            duration: 500,
+            delay: 500,
             distance: "20px",
             origin: "top",
             easing: "ease-out",

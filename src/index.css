@@ -87,39 +87,34 @@ canvas {
 }
 
 /* for scrolling */
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #0277bd #dfe9eb;
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
 }
-
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-    height: 3px;
-    width: 3px;
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
 }
-*::-webkit-scrollbar-track {
-    border-radius: 3px;
-    background-color: #dfe9eb;
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border: 0px none #ffffff;
 }
-
-*::-webkit-scrollbar-track:hover {
-    background-color: #dfe9eb;
+::-webkit-scrollbar-thumb:hover {
+    background: #346adf;
 }
-
-*::-webkit-scrollbar-track:active {
-    background-color: #dfe9eb;
+::-webkit-scrollbar-thumb:active {
+    background: #2563c8;
 }
-
-*::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: #0277bd;
+::-webkit-scrollbar-track {
+    background: #abaaaa;
+    border: 0px none #abaaaa;
 }
-
-*::-webkit-scrollbar-thumb:hover {
-    background-color: #028de0;
+::-webkit-scrollbar-track:hover {
+    background: #abaaaa;
 }
-
-*::-webkit-scrollbar-thumb:active {
-    background-color: #028de0;
+::-webkit-scrollbar-track:active {
+    background: #abaaaa;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
