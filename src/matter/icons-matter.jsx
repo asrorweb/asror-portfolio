@@ -53,7 +53,7 @@ function IconsMatter() {
         const boxB = Bodies.rectangle(330, 250, 80, 80, {
             render: { sprite: { texture: `${JsIcon}` } },
         });
-        const boxC = Bodies.rectangle(350, 10, 80, 80, {
+        const boxC = Bodies.rectangle(300, 10, 80, 80, {
             render: { sprite: { texture: `${HtmlIcon}` } },
         });
         const boxD = Bodies.rectangle(360, 100, 80, 80, {
