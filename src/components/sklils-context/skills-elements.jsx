@@ -45,6 +45,7 @@ function SkillsElements() {
                             key={uuidv4()}
                             title={data.title}
                             img={data.icon}
+                            id={data.id}
                         />
                     );
                 })}

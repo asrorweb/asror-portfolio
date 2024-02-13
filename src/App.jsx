@@ -1,6 +1,6 @@
 import { Navigation, NavigationSettings } from "./layout";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { routes, routes_settings } from "./routes";
+import { routes, routes_settings, skills_page } from "./routes";
 import { v4 as uuidv4 } from "uuid";
 import { getItem } from "./helpers/localStorageFunc";
 import { useEffect } from "react";
@@ -14,7 +14,7 @@ function App() {
     const location = useLocation();
     const dispatch = useDispatch();
     const { alert } = useSelector((state) => state.alert);
-    const general_routes = [...routes, ...routes_settings];
+    const general_routes = [...routes, ...routes_settings, ...skills_page];
 
     useEffect(() => {
         const darkLight = getItem("dark");

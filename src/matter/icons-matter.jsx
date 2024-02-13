@@ -1,6 +1,7 @@
 import Matter from "matter-js";
 import { useEffect, useRef } from "react";
 
+// icons
 import ReactIcon from "../assets/react.svg";
 import JsIcon from "../assets/js.svg";
 import CssIcon from "../assets/css.svg";
@@ -9,6 +10,11 @@ import HtmlIcon from "../assets/html.svg";
 import ReduxIcon from "../assets/redux.svg";
 import TailwindIcon from "../assets/tailwind.svg";
 import GithubIcon from "../assets/github.svg";
+import NodejsIcon from "../assets/node.svg";
+import ExpressIcon from "../assets/express.svg";
+import MongoDbIcon from "../assets/mongodb.svg";
+import PostmanIcon from "../assets/postman.svg";
+
 import { useSelector } from "react-redux";
 
 function IconsMatter() {
@@ -47,29 +53,42 @@ function IconsMatter() {
             max: { x: 600, y: 600 },
         });
         // Create dynamic boxes
-        const boxA = Bodies.rectangle(400, 200, 80, 80, {
+        const boxA = Bodies.rectangle(440, 170, 80, 80, {
             render: { sprite: { texture: `${ReactIcon}` } },
         });
-        const boxB = Bodies.rectangle(330, 250, 80, 80, {
+        const boxB = Bodies.rectangle(450, 350, 80, 80, {
             render: { sprite: { texture: `${JsIcon}` } },
         });
         const boxC = Bodies.rectangle(300, 10, 80, 80, {
             render: { sprite: { texture: `${HtmlIcon}` } },
         });
-        const boxD = Bodies.rectangle(360, 100, 80, 80, {
+        const boxD = Bodies.rectangle(400, 0, 80, 80, {
             render: { sprite: { texture: `${ReduxIcon}` } },
         });
-        const boxE = Bodies.rectangle(180, 40, 80, 80, {
+        const boxE = Bodies.rectangle(340, -80, 80, 80, {
             render: { sprite: { texture: `${CssIcon}` } },
         });
-        const boxF = Bodies.rectangle(220, 200, 80, 80, {
+        const boxF = Bodies.rectangle(290, 250, 80, 80, {
             render: { sprite: { texture: `${GithubIcon}` } },
         });
-        const boxG = Bodies.rectangle(300, 150, 80, 80, {
+        const boxG = Bodies.rectangle(290, 90, 80, 80, {
             render: { sprite: { texture: `${ScssIcon}` } },
         });
-        const boxH = Bodies.rectangle(410, 140, 80, 80, {
+        const boxH = Bodies.rectangle(430, 80, 80, 80, {
             render: { sprite: { texture: `${TailwindIcon}` } },
+        });
+
+        const boxI = Bodies.rectangle(180, 120, 80, 80, {
+            render: { sprite: { texture: `${NodejsIcon}` } },
+        });
+        const boxJ = Bodies.rectangle(150, 140, 80, 80, {
+            render: { sprite: { texture: `${ExpressIcon}` } },
+        });
+        const boxK = Bodies.rectangle(190, 240, 80, 80, {
+            render: { sprite: { texture: `${MongoDbIcon}` } },
+        });
+        const boxL = Bodies.rectangle(170, 320, 80, 80, {
+            render: { sprite: { texture: `${PostmanIcon}` } },
         });
 
         let mouse = Mouse.create(render.canvas);
@@ -92,6 +111,10 @@ function IconsMatter() {
             boxF,
             boxG,
             boxH,
+            boxI,
+            boxJ,
+            boxK,
+            boxL,
             mouseConstraint,
         ]);
 

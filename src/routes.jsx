@@ -7,9 +7,7 @@ import {
     HiCog8Tooth,
     HiLanguage,
 } from "react-icons/hi2";
-
 import { CgDarkMode } from "react-icons/cg";
-
 import { GoUnmute } from "react-icons/go";
 
 // main pages
@@ -21,6 +19,9 @@ import {
     MuteSound,
     Thema,
 } from "./pages/settings/settings_pages";
+
+// skills pages
+import { SkillsElementInfoPage } from "./components";
 
 const icon = {
     className: "w-6 h-6 sm:w-5 sm:h-5 text-inherit",
@@ -101,5 +102,12 @@ export const routes_settings = [
         path: "/settings/sound",
         color: "#DA0C81",
         element: <MuteSound className={classSetingsPage} />,
+    },
+];
+
+export const skills_page = [
+    {
+        path: "/skills/:id",
+        element: <SkillsElementInfoPage />,
     },
 ];
