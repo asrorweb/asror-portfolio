@@ -9,6 +9,7 @@ import {
 } from "react-icons/hi2";
 import { CgDarkMode } from "react-icons/cg";
 import { GoUnmute } from "react-icons/go";
+import { IoGitBranchOutline } from "react-icons/io5";
 
 // main pages
 import { About, ContactMe, Home, Settings, Skills, Works } from "./pages";
@@ -21,7 +22,7 @@ import {
 } from "./pages/settings/settings_pages";
 
 // skills pages
-import { SkillsElementInfoPage } from "./components";
+import { SiteVersion, SkillsElementInfoPage } from "./components";
 
 const icon = {
     className: "w-6 h-6 sm:w-5 sm:h-5 text-inherit",
@@ -102,6 +103,14 @@ export const routes_settings = [
         path: "/settings/sound",
         color: "#DA0C81",
         element: <MuteSound className={classSetingsPage} />,
+    },
+    {
+        icon: <IoGitBranchOutline {...icon_settings_navigation} />,
+        name: "Version",
+        nameuz: "Versiya",
+        path: "/settings/version",
+        color: "#38b000",
+        element: <SiteVersion className={classSetingsPage} />,
     },
 ];
 
