@@ -13,8 +13,9 @@
     "@heroicons/react": "^2.1.1",
     "@material-tailwind/react": "^2.1.7",
     "@reduxjs/toolkit": "^2.0.1",
+    "clsx": "^2.1.0",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^10.16.16",
+    "framer-motion": "^10.18.0",
     "matter-js": "^0.19.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,6 +24,7 @@
     "react-router-dom": "^6.22.0",
     "react-tilt": "^1.0.2",
     "scrollreveal": "^4.0.9",
+    "tailwind-merge": "^2.2.1",
     "use-sound": "^4.0.1",
     "uuid": "^9.0.1"
   },

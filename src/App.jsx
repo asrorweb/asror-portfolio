@@ -11,55 +11,49 @@ import { Alert } from "@material-tailwind/react";
 import { alertMessageEnd } from "./reducer/alert-massage";
 
 function App() {
-    const location = useLocation();
-    const dispatch = useDispatch();
-    const { alert } = useSelector((state) => state.alert);
-    const general_routes = [...routes, ...routes_settings, ...skills_page];
+  const location = useLocation();
+  const dispatch = useDispatch();
+  const { alert } = useSelector((state) => state.alert);
+  const general_routes = [...routes, ...routes_settings, ...skills_page];
 
-    useEffect(() => {
-        const darkLight = getItem("dark");
-        if (darkLight == "true") {
-            dispatch(darkModefunc());
-        }
-    }, [alert]);
+  useEffect(() => {
+    const darkLight = getItem("dark");
+    if (darkLight == "true") {
+      dispatch(darkModefunc());
+    }
+  }, [alert]);
 
-    alert !== null &&
-        setTimeout(() => {
-            dispatch(alertMessageEnd());
-        }, 2000);
+  alert !== null &&
+    setTimeout(() => {
+      dispatch(alertMessageEnd());
+    }, 2000);
 
-    return (
-        <div className="min-h-screen  dark:bg-[#171836] ">
-            {/* alert massage */}
-            {alert !== null && (
-                <Alert
-                    color={alert.color}
-                    className="max-w-[80%] sm:max-w-xl absolute right-3 top-3 z-50"
-                >
-                    {alert.title}
-                </Alert>
-            )}
+  return (
+    <div className="min-h-screen  dark:bg-[#171836] ">
+      {/* alert massage */}
+      {alert !== null && (
+        <Alert
+          color={alert.color}
+          className="max-w-[80%] sm:max-w-xl absolute right-3 top-3 z-50"
+        >
+          {alert.title}
+        </Alert>
+      )}
 
-            <ScrollTop />
-            <Navigation />
-            {location.pathname.startsWith("/settings") && (
-                <NavigationSettings />
-            )}
-            <Routes>
-                {general_routes.map((data) => {
-                    return (
-                        <Route
-                            key={uuidv4()}
-                            path={data.path}
-                            element={data.element}
-                        />
-                    );
-                })}
+      <ScrollTop />
+      <Navigation />
+      {location.pathname.startsWith("/settings") && <NavigationSettings />}
+      <Routes>
+        {general_routes.map((data) => {
+          return (
+            <Route key={uuidv4()} path={data.path} element={data.element} />
+          );
+        })}
 
-                {/* <Route path="*" element={<NoPage />} /> */}
-            </Routes>
-        </div>
-    );
+        {/* <Route path="*" element={<NoPage />} /> */}
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
