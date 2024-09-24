@@ -63,6 +63,14 @@ canvas {
     opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+    .dark .active {
+        color: #2563EB;
+    }
+}
+
+
+
 /* for global timeline  */
 .timeline > span {
     background-color: #9ca3af;
